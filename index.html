@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Disaster System</title>
+
+<style>
+body{
+    background:#1e1e2f;
+    font-family:Arial;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    color:white;
+}
+
+.box{
+    background:#2c2c3e;
+    padding:30px;
+    border-radius:10px;
+    text-align:center;
+    width:300px;
+}
+
+button{
+    width:100%;
+    padding:10px;
+    margin-top:15px;
+    border:none;
+    background:#ff6600;
+    color:white;
+    cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+<h2>Disaster Management</h2>
+
+<input type="text" placeholder="Username"><br><br>
+<input type="password" placeholder="Password"><br>
+
+<button onclick="goRegister()">Registration Form</button>
+
+</div>
+
+<script>
+function goRegister(){
+    window.location.href="registration.html";
+}
+</script>
+
+</body>
+</html>
