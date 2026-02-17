@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Authentication</title>
+
+<style>
+body{
+    background:#0a1914;
+    font-family:Arial;
+    color:white;
+    display:flex;
+    justify-content:center;
+}
+.container{
+    width:420px;
+    margin-top:20px;
+}
+input{
+    width:100%;
+    height:35px;
+    margin:6px 0;
+    padding:6px;
+}
+button{
+    width:100%;
+    height:40px;
+    background:#00c878;
+    border:none;
+    font-size:16px;
+    cursor:pointer;
+}
+.role{
+    display:flex;
+    justify-content:space-between;
+    margin-top:10px;
+}
+.center{
+    text-align:center;
+    color:lightgray;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2 style="text-align:center;">Authentication</h2>
+
+<label>Email</label>
+<input id="email" type="text">
+
+<label>Password</label>
+<input id="password" type="password">
+
+<button onclick="login()">Login</button>
+
+<p class="center">Don't have an account? Sign up</p>
+
+<label>Name</label>
+<input id="name" type="text">
+
+<label>Phone Number</label>
+<input id="phone" type="text">
+
+<label>Location</label>
+<input id="location" type="text">
+
+<div class="role">
+<label><input type="radio" name="role" value="Admin"> Admin</label>
+<label><input type="radio" name="role" value="Responder"> Responder</label>
+<label><input type="radio" name="role" value="Citizen" checked> Citizen</label>
+</div>
+
+<br>
+
+<button onclick="register()">Register</button>
+
+<p id="status" style="color:lightgreen;text-align:center;"></p>
+
+</div>
+
+<script>
+
+function register(){
+
+    let email = document.getElementById("email").value;
+    let password = document.getElementById("password").value;
+    let name = document.getElementById("name").value;
+    let phone = document.getElementById("phone").value;
+    let location = document.getElementById("location").value;
+    let role = document.querySelector('input[name="role"]:checked').value;
+
+    fetch("http://localhost:8080/api/auth/register", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            email: email,
+            password: password,
+            name: name,
+            phone: phone,
+            location: location,
+            role: role
+        })
+    })
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("status").innerText = data;
+    })
+    .catch(error => {
+        document.getElementById("status").innerText = "Error connecting to backend!";
+    });
+}
+
+function login(){
+
+    let email = document.getElementById("email").value;
+    let password = document.getElementById("password").value;
+
+    fetch("http://localhost:8080/api/auth/login", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            email: email,
+            password: password
+        })
+    })
+    .then(response => response.json())
+    .then(data => {
+
+        if(data.token){
+            alert("Login Successful!");
+            console.log("JWT Token:", data.token);
+            localStorage.setItem("token", data.token);
+        } else {
+            alert(data.error);
+        }
+
+    })
+    .catch(error => {
+        alert("Error connecting to backend!");
+    });
+}
+
+</script>
