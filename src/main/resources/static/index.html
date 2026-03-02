@@ -1,149 +1,264 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Authentication</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Disaster Management & Alert System</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 
 <style>
-body{
-    background:#0a1914;
-    font-family:Arial;
-    color:white;
-    display:flex;
-    justify-content:center;
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    overflow-y: auto;
+    position: relative;
 }
-.container{
-    width:420px;
-    margin-top:20px;
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
 }
-input{
-    width:100%;
-    height:35px;
-    margin:6px 0;
-    padding:6px;
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 20, 0.65);
+    backdrop-filter: blur(6px);
+    z-index: -1;
 }
-button{
-    width:100%;
-    height:40px;
-    background:#00c878;
-    border:none;
-    font-size:16px;
-    cursor:pointer;
+
+.container {
+    width: 440px;
+    background: rgba(10, 15, 35, 0.95);
+    padding: 3rem 2.5rem;
+    border-radius: 24px;
+    box-shadow: 0 20px 70px rgba(0,0,0,0.9);
+    backdrop-filter: blur(14px);
+    border: 1px solid rgba(96,165,250,0.2);
+    position: relative;
+    z-index: 10;
+    max-height: 90vh;
+    overflow-y: auto;
 }
-.role{
-    display:flex;
-    justify-content:space-between;
-    margin-top:10px;
+
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #60a5fa;
+    font-size: 1.9rem;
 }
-.center{
-    text-align:center;
-    color:lightgray;
+
+label {
+    display: block;
+    margin: 1.2rem 0 0.5rem;
+    color: #d1d5db;
+}
+
+input {
+    width: 100%;
+    height: 48px;
+    padding: 0 1rem;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+}
+
+input:focus {
+    outline: none;
+    border-color: #60a5fa;
+    box-shadow: 0 0 12px rgba(96,165,250,0.5);
+}
+
+button {
+    width: 100%;
+    height: 50px;
+    margin-top: 2rem;
+    background: linear-gradient(135deg, #3b82f6, #60a5fa);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(59,130,246,0.5);
+}
+
+.extra-links {
+    text-align: center;
+    margin-top: 1.5rem;
+    color: #94a3b8;
+}
+
+.extra-links a {
+    color: #60a5fa;
+    text-decoration: none;
+}
+
+.extra-links a:hover {
+    text-decoration: underline;
+}
+
+.role-group {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    color: #d1d5db;
+}
+
+.role-group label {
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+#status {
+    text-align: center;
+    margin-top: 1rem;
+    color: #f87171;
 }
 </style>
 </head>
 
 <body>
 
+<canvas id="starCanvas"></canvas>
+<div class="overlay"></div>
+
 <div class="container">
 
-<h2 style="text-align:center;">Authentication</h2>
+<h2 id="formTitle">Login</h2>
 
+<div id="loginForm">
 <label>Email</label>
-<input id="email" type="text">
+<input id="loginEmail" type="text" placeholder="Enter your email">
 
 <label>Password</label>
-<input id="password" type="password">
+<input id="loginPassword" type="password" placeholder="Enter your password">
 
 <button onclick="login()">Login</button>
 
-<p class="center">Don't have an account? Sign up</p>
+<div class="extra-links">
+<p>Don't have an account? <a href="#" onclick="toggleForm()">Sign up</a></p>
+</div>
+</div>
+
+<div id="registerForm" style="display:none;">
 
 <label>Name</label>
-<input id="name" type="text">
+<input id="name" type="text" placeholder="Full name">
 
-<label>Phone Number</label>
-<input id="phone" type="text">
+<label>Email</label>
+<input id="registerEmail" type="text" placeholder="Enter email">
+
+<label>Password</label>
+<input id="registerPassword" type="password" placeholder="Create password">
+
+<label>Phone</label>
+<input id="phone" type="text" placeholder="Phone number">
 
 <label>Location</label>
-<input id="location" type="text">
+<input id="location" type="text" placeholder="City / District">
 
-<div class="role">
+<div class="role-group">
 <label><input type="radio" name="role" value="Admin"> Admin</label>
 <label><input type="radio" name="role" value="Responder"> Responder</label>
 <label><input type="radio" name="role" value="Citizen" checked> Citizen</label>
 </div>
 
-<br>
-
 <button onclick="register()">Register</button>
 
-<p id="status" style="color:lightgreen;text-align:center;"></p>
+<div class="extra-links">
+<p>Already have account? <a href="#" onclick="toggleForm()">Login</a></p>
+</div>
+
+</div>
+
+<p id="status"></p>
 
 </div>
 
 <script>
+// Toggle Login/Register
+function toggleForm() {
+    const loginForm = document.getElementById("loginForm");
+    const registerForm = document.getElementById("registerForm");
+    const title = document.getElementById("formTitle");
 
-function register(){
+    if (loginForm.style.display === "none") {
+        loginForm.style.display = "block";
+        registerForm.style.display = "none";
+        title.innerText = "Login";
+    } else {
+        loginForm.style.display = "none";
+        registerForm.style.display = "block";
+        title.innerText = "Register";
+    }
+}
 
-    let email = document.getElementById("email").value;
-    let password = document.getElementById("password").value;
-    let name = document.getElementById("name").value;
-    let phone = document.getElementById("phone").value;
-    let location = document.getElementById("location").value;
-    let role = document.querySelector('input[name="role"]:checked').value;
+// Register
+function register() {
+    const data = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("registerEmail").value,
+        password: document.getElementById("registerPassword").value,
+        phone: document.getElementById("phone").value,
+        location: document.getElementById("location").value,
+        role: document.querySelector('input[name="role"]:checked').value
+    };
 
     fetch("http://localhost:8080/api/auth/register", {
         method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-            email: email,
-            password: password,
-            name: name,
-            phone: phone,
-            location: location,
-            role: role
-        })
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data)
     })
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById("status").innerText = data;
-    })
-    .catch(error => {
-        document.getElementById("status").innerText = "Error connecting to backend!";
-    });
+    .then(res => res.text())
+    .then(msg => document.getElementById("status").innerText = msg)
+    .catch(() => document.getElementById("status").innerText = "Backend connection error");
 }
 
-function login(){
-
-    let email = document.getElementById("email").value;
-    let password = document.getElementById("password").value;
+// Login
+function login() {
+    const data = {
+        email: document.getElementById("loginEmail").value,
+        password: document.getElementById("loginPassword").value
+    };
 
     fetch("http://localhost:8080/api/auth/login", {
         method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-            email: email,
-            password: password
-        })
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data)
     })
-    .then(response => response.json())
+    .then(res => res.json())
     .then(data => {
-
-        if(data.token){
-            alert("Login Successful!");
-            console.log("JWT Token:", data.token);
+        if (data.token) {
             localStorage.setItem("token", data.token);
+            alert("Login Successful!");
+            window.location.href = "home.html";
         } else {
-            alert(data.error);
+            alert(data.error || "Login Failed");
         }
-
     })
-    .catch(error => {
-        alert("Error connecting to backend!");
-    });
+    .catch(() => alert("Backend connection error"));
 }
-
 </script>
+
+</body>
+</html>

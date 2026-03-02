@@ -75,6 +75,12 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+            <!-- Rome library to read NDMA RSS alerts -->
+    <dependency>
+        <groupId>com.rometools</groupId>
+        <artifactId>rome</artifactId>
+        <version>2.1.0</version>
+    </dependency>
 
     </dependencies>
 
