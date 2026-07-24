@@ -1,10 +1,15 @@
 ﻿<div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=ff4500,ff8c00,ffd700&height=200&section=header&text=Disaster%20Management%20%26%20Alert%20System&fontSize=32&fontColor=ffffff&fontAlignY=40&desc=Emergency%20Response%20Command%20Center%20%7C%20Java%2021%20%7C%20Spring%20Boot%204%20%7C%20JWT%20%7C%20MySQL&descAlignY=62&descSize=14&animation=fadeIn" width="100%"/>
+<!-- ANIMATED TYPING - Title -->
+<img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=900&size=34&duration=4000&pause=1000&color=FF8C00&center=true&vCenter=true&width=800&height=80&lines=DISASTER+MANAGEMENT;%26+ALERT+SYSTEM" alt="Disaster Management and Alert System"/>
 
-</div>
+<!-- ANIMATED TYPING - Subtitle -->
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=15&duration=2500&pause=700&color=FFD700&center=true&vCenter=true&width=750&height=50&lines=Java+21+%7C+Spring+Boot+4.0.4+%7C+JWT+%7C+MySQL+8.0;Admin+%7C+Citizen+%7C+Responder+Role+System;localhost%3A8080+%7C+Local+Development+Only;Infosys+Springboard+6.0+Internship+Project" alt="Subtitle"/>
 
-<div align="center">
+<!-- ANIMATED ALERT STRIP -->
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=12&duration=1500&pause=300&color=FF4500&center=true&vCenter=true&width=800&height=25&lines=%F0%9F%9A%A8+EMERGENCY+RESPONSE+COMMAND+CENTER+%7C+localhost%3A8080+%7C+mvnw+spring-boot%3Arun+%F0%9F%9A%A8" alt="Alert Strip"/>
+
+<br/>
 
 ![Java](https://img.shields.io/badge/Java-21-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot-4.0.4-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
@@ -16,10 +21,12 @@
 <br/>
 
 ![License](https://img.shields.io/badge/License-Academic-blue?style=flat-square)
-![Status](https://img.shields.io/badge/Status-Local_Dev-orange?style=flat-square)
-![Internship](https://img.shields.io/badge/Infosys_Springboard-6.0-0066CC?style=flat-square&logo=infosys)
+![Status](https://img.shields.io/badge/Status-Local_Dev_Only-orange?style=flat-square)
+![Internship](https://img.shields.io/badge/Infosys_Springboard-6.0-0066CC?style=flat-square)
 ![Localhost](https://img.shields.io/badge/Runs_On-localhost:8080-brightgreen?style=flat-square)
 ![Platform](https://img.shields.io/badge/Platform-Local_Only-red?style=flat-square)
+![HikariCP](https://img.shields.io/badge/HikariCP-Connection_Pool-blue?style=flat-square)
+[![Stars](https://img.shields.io/github/stars/Matheeshkumar368/Disaster-Management-Alert-System-?style=flat-square&label=Stars)](https://github.com/Matheeshkumar368/Disaster-Management-Alert-System-)
 
 </div>
 
@@ -27,7 +34,8 @@
 
 <div align="center">
 
-### This project runs only through `./mvnw spring-boot:run` and is accessible at `http://localhost:8080`
+### This project runs only through `./mvnw spring-boot:run`
+### Accessible at `http://localhost:8080`
 **Designed for Local Development and Testing &nbsp;|&nbsp; Built using Java Spring Boot and Maven**
 **Developed as part of Infosys Springboard 6.0 Internship Program**
 
@@ -75,9 +83,9 @@
 
 </div>
 
-> This is not an online deployed application.
-> Built using Java Spring Boot and Maven.
-> Developed as part of Infosys Springboard 6.0 Internship Program.
+> This is not an online deployed application.  
+> Built using Java Spring Boot and Maven.  
+> Developed as part of Infosys Springboard 6.0 Internship Program.  
 > Easily executable on localhost using Maven Wrapper — `http://localhost:8080`
 
 ---
@@ -112,7 +120,7 @@ This system addresses that gap by providing a **structured, role-aware emergency
 
 ---
 
-## Features
+## ⚡ Features
 
 <div align="center">
 
@@ -132,13 +140,13 @@ This system addresses that gap by providing a **structured, role-aware emergency
 | 🔔 Alerts | Emergency alert display per user role | All |
 | 👤 Profile Management | Profile management for all roles | All |
 | 🏋️ Training | Responder training module | Responder |
-| 🔄 Connection Pool | HikariCP connection pool with MySQL optimization | System |
+| 🔄 Connection Pool | HikariCP with MySQL optimization | System |
 
 </div>
 
 ---
 
-## Technology Stack
+## 🛠️ Technology Stack
 
 <div align="center">
 
@@ -147,7 +155,7 @@ This system addresses that gap by providing a **structured, role-aware emergency
 | Technology | Version | Purpose |
 |:---|:---:|:---|
 | Java | 21 LTS | Core application language |
-| Spring Boot | 4.0.4 | Application framework and embedded Tomcat server |
+| Spring Boot | 4.0.4 | Application framework and embedded Tomcat |
 | Spring Security | Included | Authentication and authorization |
 | Spring Data JPA | Included | ORM and database abstraction |
 | JJWT | 0.11.5 | JSON Web Token generation and validation |
@@ -162,8 +170,8 @@ This system addresses that gap by providing a **structured, role-aware emergency
 | Technology | Purpose |
 |:---|:---|
 | HTML5 | Page structure for all dashboards |
-| CSS3 | Styling — dark themes, card layouts, glassmorphism |
-| JavaScript (Vanilla) | Dynamic interactions and fetch API calls |
+| CSS3 | Styling — dark themes, card layouts |
+| JavaScript Vanilla | Dynamic interactions and Fetch API calls |
 
 ### Infrastructure
 
@@ -171,63 +179,63 @@ This system addresses that gap by providing a **structured, role-aware emergency
 |:---|:---|
 | MySQL 8.0 | Primary relational database |
 | Maven Wrapper | Dependency management and build tool |
-| Maven Compiler Plugin | Annotation processing with Lombok support |
+| Maven Compiler Plugin | Annotation processing with Lombok |
 
 </div>
 
 ---
 
-## Project Architecture
+## 🏗️ Project Architecture
 
 ```
 +-----------------------------------------------------------------------------+
 |                  DISASTER MANAGEMENT SYSTEM ARCHITECTURE                    |
 +-----------------------------------------------------------------------------+
 |                                                                             |
-|  PRESENTATION LAYER (Static HTML/CSS/JS - served by Spring Boot)           |
+|  PRESENTATION LAYER  (Static HTML/CSS/JS - served by Spring Boot)          |
 |  index.html | citizen-dashboard | admin-dashboard | responder-dashboard     |
 |  alerts.html | reports.html | profile.html | training.html | admin-tasks    |
 |                                                                             |
 +------------------------------------+----------------------------------------+
                                      |
-                              HTTP / REST API
+                              HTTP REST API
                                      |
 +------------------------------------v----------------------------------------+
 |                        SECURITY LAYER                                       |
-|           Spring Security  -->  JWT Filter  -->  JwtUtil.java               |
-|           SecurityConfig.java  -->  Role-based endpoint protection          |
+|          Spring Security  -->  JWT Filter  -->  JwtUtil.java                |
+|          SecurityConfig.java  -->  Role-based endpoint protection           |
 +------------------------------------+----------------------------------------+
                                      |
 +------------------------------------v----------------------------------------+
-|                        CONTROLLER LAYER                                     |
+|                    CONTROLLER LAYER  (7 Controllers)                        |
 |   AuthController    AlertController    DisasterController                   |
 |   CitizenReportController    IncidentReportController                       |
 |   RescueTaskController    MessageController                                 |
 +------------------------------------+----------------------------------------+
                                      |
 +------------------------------------v----------------------------------------+
-|                        SERVICE LAYER                                        |
+|                    SERVICE LAYER  (5 Services)                              |
 |   AlertService    DisasterService    CitizenReportService                   |
 |   IncidentReportService    RescueTaskService                                |
 +------------------------------------+----------------------------------------+
                                      |
 +------------------------------------v----------------------------------------+
-|                   REPOSITORY LAYER  (Spring Data JPA)                      |
+|              REPOSITORY LAYER  (7 Repositories - Spring Data JPA)          |
 |   UserRepository    AlertRepository    DisasterRepository                   |
 |   CitizenReportRepository    IncidentReportRepository                       |
 |   RescueTaskRepository    MessageRepository                                 |
 +------------------------------------+----------------------------------------+
                                      |
-                             HikariCP Pool
+                             HikariCP Pool  (max 20 connections)
                                      |
 +------------------------------------v----------------------------------------+
-|              MySQL 8.0  --  disaster_management database                    |
+|         MySQL 8.0  --  disaster_management  database  (7 entity tables)    |
 +-----------------------------------------------------------------------------+
 ```
 
 ---
 
-## Role Based Authentication Flow
+## 🔐 Role Based Authentication Flow
 
 ```
                     +------------------+
@@ -245,7 +253,7 @@ This system addresses that gap by providing a **structured, role-aware emergency
           +------------------+------------------+
           |                  |                  |
  +--------v-------+ +--------v-------+ +--------v--------+
- |  ADMIN ROLE    | | CITIZEN ROLE   | | RESPONDER ROLE  |
+ |   ADMIN ROLE   | | CITIZEN ROLE   | | RESPONDER ROLE  |
  +--------+-------+ +--------+-------+ +--------+--------+
           |                  |                  |
  +--------v-------+ +--------v-------+ +--------v--------+
@@ -262,7 +270,7 @@ This system addresses that gap by providing a **structured, role-aware emergency
 
 ---
 
-## Project Structure
+## 📁 Project Structure
 
 <details>
 <summary>Click to expand full project structure</summary>
@@ -270,190 +278,171 @@ This system addresses that gap by providing a **structured, role-aware emergency
 ```
 Disaster-Management-Alert-System/
 |
-+-- pom.xml                              # Maven build config - Spring Boot 4.0.4, Java 21
-+-- mvnw / mvnw.cmd                      # Maven Wrapper scripts (Linux / Windows)
-+-- DATABASE_SETUP.sql                   # MySQL schema initialization script
++-- pom.xml                              # Maven - Spring Boot 4.0.4, Java 21
++-- mvnw / mvnw.cmd                      # Maven Wrapper (Linux / Windows)
++-- DATABASE_SETUP.sql                   # MySQL schema script
 |
-+-- src/
-|   +-- main/
-|   |   +-- java/com/disaster/management/
-|   |   |   |
-|   |   |   +-- DisasterManagementApplication.java    # Spring Boot entry point
-|   |   |   +-- DataInitializer.java                  # Seed data on startup
-|   |   |   |
-|   |   |   +-- config/
-|   |   |   |   +-- SecurityConfig.java               # Spring Security + JWT setup
-|   |   |   |
-|   |   |   +-- controller/
-|   |   |   |   +-- AuthController.java               # Login and registration endpoints
-|   |   |   |   +-- AlertController.java              # Alert CRUD endpoints
-|   |   |   |   +-- DisasterController.java           # Disaster management endpoints
-|   |   |   |   +-- CitizenReportController.java      # Citizen report endpoints
-|   |   |   |   +-- IncidentReportController.java     # Incident report endpoints
-|   |   |   |   +-- RescueTaskController.java         # Rescue task endpoints
-|   |   |   |   +-- MessageController.java            # Inter-role messaging endpoints
-|   |   |   |
-|   |   |   +-- entity/
-|   |   |   |   +-- User.java                         # User entity (Admin/Citizen/Responder)
-|   |   |   |   +-- Alert.java                        # Emergency alert entity
-|   |   |   |   +-- Disaster.java                     # Disaster event entity
-|   |   |   |   +-- CitizenReport.java                # Citizen-submitted report entity
-|   |   |   |   +-- IncidentReport.java               # Incident report entity
-|   |   |   |   +-- RescueTask.java                   # Rescue task entity
-|   |   |   |   +-- Message.java                      # Inter-role message entity
-|   |   |   |
-|   |   |   +-- repository/
-|   |   |   |   +-- UserRepository.java
-|   |   |   |   +-- AlertRepository.java
-|   |   |   |   +-- DisasterRepository.java
-|   |   |   |   +-- CitizenReportRepository.java
-|   |   |   |   +-- IncidentReportRepository.java
-|   |   |   |   +-- RescueTaskRepository.java
-|   |   |   |   +-- MessageRepository.java
-|   |   |   |
-|   |   |   +-- security/
-|   |   |   |   +-- JwtUtil.java                      # JWT generation and validation
-|   |   |   |
-|   |   |   +-- service/
-|   |   |       +-- AlertService.java
-|   |   |       +-- DisasterService.java
-|   |   |       +-- CitizenReportService.java
-|   |   |       +-- IncidentReportService.java
-|   |   |       +-- RescueTaskService.java
-|   |   |
-|   |   +-- resources/
-|   |       +-- application.properties                # DB config, server port, JPA settings
-|   |       +-- static/                               # Frontend HTML/CSS/JS
-|   |           +-- index.html                        # Login page
-|   |           +-- home.html                         # Landing page
-|   |           +-- citizen-dashboard.html            # Citizen role dashboard
-|   |           +-- admin-dashboard.html              # Admin role dashboard
-|   |           +-- responder-dashboard.html          # Responder role dashboard
-|   |           +-- alerts.html                       # Alert viewing page
-|   |           +-- admin-alerts.html                 # Admin alert management
-|   |           +-- reports.html                      # Reports listing
-|   |           +-- profile.html                      # User profile management
-|   |           +-- admin-profile.html                # Admin profile
-|   |           +-- admin-tasks.html                  # Admin task assignment
-|   |           +-- responder-profile.html            # Responder profile
-|   |           +-- responder-register.html           # Responder registration
-|   |           +-- responder-rescue.html             # Rescue operation view
-|   |           +-- responder-tasks.html              # Responder task list
-|   |           +-- training.html                     # Responder training module
-|   |           +-- auth-guard.js                     # Frontend route protection
-|   |           +-- role-loading.js                   # Role-based redirect logic
-|   |           +-- role-loading.css                  # Loading screen styles
++-- src/main/java/com/disaster/management/
 |   |
-|   +-- test/
-|       +-- DisasterManagementApplicationTests.java
+|   +-- DisasterManagementApplication.java
+|   +-- DataInitializer.java
+|   |
+|   +-- config/
+|   |   +-- SecurityConfig.java
+|   |
+|   +-- controller/
+|   |   +-- AuthController.java
+|   |   +-- AlertController.java
+|   |   +-- DisasterController.java
+|   |   +-- CitizenReportController.java
+|   |   +-- IncidentReportController.java
+|   |   +-- RescueTaskController.java
+|   |   +-- MessageController.java
+|   |
+|   +-- entity/
+|   |   +-- User.java
+|   |   +-- Alert.java
+|   |   +-- Disaster.java
+|   |   +-- CitizenReport.java
+|   |   +-- IncidentReport.java
+|   |   +-- RescueTask.java
+|   |   +-- Message.java
+|   |
+|   +-- repository/
+|   |   +-- UserRepository.java
+|   |   +-- AlertRepository.java
+|   |   +-- DisasterRepository.java
+|   |   +-- CitizenReportRepository.java
+|   |   +-- IncidentReportRepository.java
+|   |   +-- RescueTaskRepository.java
+|   |   +-- MessageRepository.java
+|   |
+|   +-- security/
+|   |   +-- JwtUtil.java
+|   |
+|   +-- service/
+|       +-- AlertService.java
+|       +-- DisasterService.java
+|       +-- CitizenReportService.java
+|       +-- IncidentReportService.java
+|       +-- RescueTaskService.java
 |
-+-- login-designs/                       # UI variant designs
-|   +-- VARIANT_1_NORTHERN/
-|   +-- VARIANT_2_CRISIS/
-|   +-- VARIANT_3_TERRA/
-|
-+-- loading-screen/                      # Custom loading screen component
++-- src/main/resources/
+|   +-- application.properties
+|   +-- static/
+|       +-- index.html                   # Login page
+|       +-- home.html
+|       +-- citizen-dashboard.html
+|       +-- admin-dashboard.html
+|       +-- responder-dashboard.html
+|       +-- alerts.html
+|       +-- admin-alerts.html
+|       +-- reports.html
+|       +-- profile.html
+|       +-- admin-profile.html
+|       +-- admin-tasks.html
+|       +-- responder-profile.html
+|       +-- responder-register.html
+|       +-- responder-rescue.html
+|       +-- responder-tasks.html
+|       +-- training.html
+|       +-- auth-guard.js
+|       +-- role-loading.js
+|       +-- role-loading.css
 ```
 
 </details>
 
 ---
 
-## Emergency Monitoring Workflow
+## 🔄 Emergency Monitoring Workflow
 
 ```
-STEP 1 - DETECTION
-  Citizen logs in  -->  Opens Citizen Dashboard
-  -->  Clicks "Report Disaster"
-  -->  Fills type, location, severity, date
-  -->  Submits via POST /api/citizen-reports
+STEP 1 - CITIZEN REPORTS
+  Citizen logs in  -->  Citizen Dashboard
+  -->  Report Disaster  -->  POST /api/citizen-reports
                     |
                     v
-STEP 2 - ADMIN REVIEW
-  Admin logs in  -->  Sees new report on Admin Dashboard
-  -->  Reviews CitizenReport + IncidentReport data
-  -->  Creates Disaster record via POST /api/disasters
+STEP 2 - ADMIN REVIEWS
+  Admin Dashboard  -->  Reviews reports
+  -->  Creates Disaster  -->  POST /api/disasters
                     |
                     v
 STEP 3 - ALERT BROADCAST
-  Admin  -->  Admin Alerts  -->  Creates emergency alert
-  -->  POST /api/alerts  -->  Saved to MySQL
-  -->  Visible to all roles on their dashboards
+  Admin  -->  Admin Alerts  -->  POST /api/alerts
+  -->  Alert visible to all roles
                     |
                     v
-STEP 4 - RESCUE TASK ASSIGNMENT
-  Admin  -->  Admin Tasks  -->  Creates RescueTask
-  -->  Assigns to specific Responder
+STEP 4 - TASK ASSIGNMENT
+  Admin  -->  Admin Tasks
+  -->  Assigns Rescue Task to Responder
   -->  POST /api/rescue-tasks
                     |
                     v
 STEP 5 - RESPONDER ACTION
-  Responder logs in  -->  Responder Dashboard
-  -->  Views assigned rescue tasks
-  -->  Updates task status: Pending --> In Progress --> Completed
+  Responder Dashboard  -->  View tasks
+  -->  Pending --> In Progress --> Completed
   -->  PUT /api/rescue-tasks/{id}
                     |
                     v
 STEP 6 - RESOLUTION
-  Admin monitors status  -->  Updates Disaster status to Resolved
-  -->  Incident archived in MySQL
+  Admin updates Disaster status to Resolved
+  -->  Archived in MySQL
 ```
 
 ---
 
-## Screenshot Gallery
+## 📸 Screenshot Gallery
 
-> Run the project at `http://localhost:8080`, take screenshots, and add them to a `/screenshots` folder in the repo. Then replace the placeholder text below with `![description](screenshots/filename.png)`.
+> Run the project at `http://localhost:8080`, capture screenshots, place them in a `/screenshots` folder, then replace each placeholder with `![desc](screenshots/filename.png)`.
 
 <div align="center">
 
 ---
 
-### Login Page
-> SCREENSHOT WILL BE ADDED HERE — `localhost:8080/index.html`
+### 🔐 Login Page
+> `SCREENSHOT WILL BE ADDED HERE` — `localhost:8080/index.html`
 
 ---
 
-### Registration Page
-> SCREENSHOT WILL BE ADDED HERE
+### 📝 Registration Page
+> `SCREENSHOT WILL BE ADDED HERE`
 
 ---
 
-### Citizen Dashboard
-> SCREENSHOT WILL BE ADDED HERE — `localhost:8080/citizen-dashboard.html`
+### 🏠 Citizen Dashboard
+> `SCREENSHOT WILL BE ADDED HERE` — `localhost:8080/citizen-dashboard.html`
 
 ---
 
-### Admin Dashboard
-> SCREENSHOT WILL BE ADDED HERE — `localhost:8080/admin-dashboard.html`
+### ⚙️ Admin Dashboard
+> `SCREENSHOT WILL BE ADDED HERE` — `localhost:8080/admin-dashboard.html`
 
 ---
 
-### Responder Dashboard
-> SCREENSHOT WILL BE ADDED HERE — `localhost:8080/responder-dashboard.html`
+### 🧑‍🚒 Responder Dashboard
+> `SCREENSHOT WILL BE ADDED HERE` — `localhost:8080/responder-dashboard.html`
 
 ---
 
-### Emergency Alerts
-> SCREENSHOT WILL BE ADDED HERE — `localhost:8080/alerts.html`
+### 🚨 Emergency Alerts
+> `SCREENSHOT WILL BE ADDED HERE` — `localhost:8080/alerts.html`
 
 ---
 
-### Disaster Monitoring
-> SCREENSHOT WILL BE ADDED HERE
+### 📊 Disaster Monitoring
+> `SCREENSHOT WILL BE ADDED HERE`
 
 ---
 
-### Profile Management
-> SCREENSHOT WILL BE ADDED HERE — `localhost:8080/profile.html`
-
----
+### 👤 Profile Management
+> `SCREENSHOT WILL BE ADDED HERE` — `localhost:8080/profile.html`
 
 </div>
 
 ---
 
-## Installation Guide
+## 🔧 Installation Guide
 
 ### Requirements
 
@@ -462,9 +451,9 @@ STEP 6 - RESOLUTION
 | Requirement | Version |
 |:---|:---:|
 | Java JDK | 21 LTS |
-| MySQL Server | 8.0+ |
+| MySQL Server | 8.0 or higher |
 | Git | Latest |
-| Maven | via Wrapper (included in repo) |
+| Maven | Included via Maven Wrapper |
 
 </div>
 
@@ -486,15 +475,13 @@ cd Disaster-Management-Alert-System-
 CREATE DATABASE disaster_management;
 ```
 
-Then run the provided setup script:
-
 ```bash
 mysql -u root -p disaster_management < DATABASE_SETUP.sql
 ```
 
-### Step 4 — Configure Database Credentials
+### Step 4 — Configure Credentials
 
-Open `src/main/resources/application.properties` and update:
+Edit `src/main/resources/application.properties`:
 
 ```properties
 spring.datasource.url=jdbc:mysql://localhost:3306/disaster_management
@@ -504,7 +491,7 @@ spring.datasource.password=your_mysql_password
 
 ---
 
-## Running the Project
+## ▶️ Running the Project
 
 ### Windows
 
@@ -524,36 +511,33 @@ mvnw.cmd spring-boot:run
 http://localhost:8080
 ```
 
-> This project runs only on your local machine.
-> No internet connection required after Maven downloads dependencies.
-> No cloud hosting. No live deployment.
-> Designed for Local Development and Testing.
+> Local development only. No cloud. No deployment. No live demo.
 
 ---
 
-## Future Scope
+## 🚀 Future Scope
 
 <details>
-<summary>Click to expand development roadmap</summary>
+<summary>Click to expand roadmap</summary>
 
 | Priority | Feature |
 |:---:|:---|
-| High | Real-time WebSocket notifications for instant alert delivery |
-| High | SMS and Email alert dispatch using Twilio or SendGrid |
-| Medium | Interactive map integration using Leaflet.js for disaster location visualization |
-| Medium | NDMA RSS feed auto-parsing for real government disaster data |
-| Medium | Forgot password and password reset flow |
-| Low | Mobile application for field responders |
-| Low | Multi-language support for regional accessibility |
-| Low | Docker containerization for one-command deployment |
-| Low | CI/CD pipeline with GitHub Actions for automated testing |
-| Low | AI-based disaster severity prediction from historical report data |
+| High | Real-time WebSocket notifications |
+| High | SMS and Email alerts via Twilio or SendGrid |
+| Medium | Interactive map with Leaflet.js |
+| Medium | NDMA RSS feed auto-parsing |
+| Medium | Forgot password and reset flow |
+| Low | Mobile app for field responders |
+| Low | Multi-language support |
+| Low | Docker containerization |
+| Low | CI/CD with GitHub Actions |
+| Low | AI-based severity prediction |
 
 </details>
 
 ---
 
-## Contributors
+## 👨‍💻 Contributors
 
 <div align="center">
 
@@ -561,7 +545,7 @@ http://localhost:8080
   <tr>
     <td align="center">
       <a href="https://github.com/Matheeshkumar368">
-        <img src="https://avatars.githubusercontent.com/u/Matheeshkumar368?v=4" width="100px" alt="Matheeshkumar" style="border-radius:50%"/><br/>
+        <img src="https://avatars.githubusercontent.com/u/Matheeshkumar368?v=4" width="100px" style="border-radius:50%" alt="Matheeshkumar"/><br/>
         <b>Matheeshkumar</b><br/>
         <sub>Full Stack Developer</sub><br/>
         <sub>Infosys Springboard 6.0 Intern</sub>
@@ -572,24 +556,23 @@ http://localhost:8080
 
 | Area | Contribution |
 |:---|:---|
-| Architecture | Designed full MVC layer structure with Spring Boot |
-| Security | Implemented JWT authentication with Spring Security |
-| Database | Designed MySQL schema with 7 entity tables |
-| Frontend | Built 15+ HTML dashboards with dark themes |
-| REST API | Developed 7 controllers covering all system modules |
-| Testing | Wrote and executed application integration tests |
-| Build | Configured Maven Wrapper for cross-platform builds |
+| Architecture | Full MVC layer — Spring Boot 4 structure |
+| Security | JWT authentication with Spring Security |
+| Database | MySQL schema — 7 entity tables |
+| Frontend | 15+ HTML role-based dashboards |
+| REST API | 7 controllers covering all modules |
+| Testing | Application integration tests |
+| Build | Maven Wrapper cross-platform config |
 
 </div>
 
 ---
 
-## License
-
-This project was developed for academic and internship purposes under the **Infosys Springboard 6.0 Program**.
+## 📄 License
 
 ```
 Academic Use License
+Developed under Infosys Springboard 6.0 Internship Program.
 Free to use as reference for learning and academic projects.
 Not intended for commercial use.
 ```
@@ -598,10 +581,16 @@ Not intended for commercial use.
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=ff4500,ff8c00,ffd700&height=120&section=footer&text=Infosys%20Springboard%206.0%20%7C%20localhost:8080%20%7C%20Local%20Dev%20Only&fontSize=13&fontColor=ffffff&fontAlignY=65" width="100%"/>
+<!-- ANIMATED FOOTER -->
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=12&duration=2000&pause=500&color=FF4500&center=true&vCenter=true&width=700&height=28&lines=Disaster+Management+%26+Alert+System+%7C+Infosys+Springboard+6.0;Java+21+%7C+Spring+Boot+4+%7C+JWT+%7C+MySQL+%7C+localhost%3A8080;Local+Development+Only+%7C+mvnw+spring-boot%3Arun" alt="Footer"/>
 
-**If this project helped you, please give it a star**
+<br/>
 
-Developed with dedication during the **Infosys Springboard 6.0 Internship Program**
+[![GitHub stars](https://img.shields.io/github/stars/Matheeshkumar368/Disaster-Management-Alert-System-?style=social)](https://github.com/Matheeshkumar368/Disaster-Management-Alert-System-)
+[![GitHub forks](https://img.shields.io/github/forks/Matheeshkumar368/Disaster-Management-Alert-System-?style=social)](https://github.com/Matheeshkumar368/Disaster-Management-Alert-System-)
+
+<br/>
+
+**Made with dedication during Infosys Springboard 6.0 Internship Program**
 
 </div>
